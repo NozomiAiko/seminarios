@@ -69,7 +69,7 @@ public class MainServlet extends HttpServlet {
         String nombres = request.getParameter("nombres");
         String apellidos = request.getParameter("apellidos");
         String turno = request.getParameter("turno");
-        String[] seminarios = request.getParameterValues("seminarios");
+        String seminarios = request.getParameter("seminarios");
 
         HttpSession ses = request.getSession();
         List<inscripcion> lista = (ArrayList<inscripcion>) ses.getAttribute("lista");
@@ -81,9 +81,7 @@ public class MainServlet extends HttpServlet {
             ins.setNombres(nombres);
             ins.setApellidos(apellidos);
             ins.setTurno(turno);
-            if(seminarios !=null){
-                ins.setSeminarios(new ArrayList<>(Arrays.asList(seminarios)));
-            }
+            ins.setSeminarios(seminarios);
 
             lista.add(ins);
         }else{
@@ -93,7 +91,7 @@ public class MainServlet extends HttpServlet {
                     item.setNombres(nombres);
                     item.setApellidos(apellidos);
                     item.setTurno(turno);
-                    item.setSeminarios(null);
+                    item.setSeminarios(seminarios);
                     break;
                 }
             }

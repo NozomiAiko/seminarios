@@ -41,13 +41,13 @@
                     <td>seminarios disponibles:</td>
                     <td>
                        <label for="seminarios">Seminarios:</label><br>
-            <input type="checkbox" id="ia" name="seminarios" value="Inteligencia Artificial" <%= seminarios != null && seminarios.contains("Inteligencia Artificial") ? "checked" : "" %>>
+            <input type="checkbox" id="ia" name="seminarios" value="Inteligencia Artificial" >
             <label for="ia">Inteligencia Artificial</label><br>
-            <input type="checkbox" id="ml" name="seminarios" value="Machine Learning" <%= seminarios != null && seminarios.contains("Machine Learning") ? "checked" : "" %>>
+            <input type="checkbox" id="ml" name="seminarios" value="Machine Learning" >
             <label for="ml">Machine Learning</label><br>
-            <input type="checkbox" id="sa" name="seminarios" value="Simulacion con Arena" <%= seminarios != null && seminarios.contains("Simulación con Arena") ? "checked" : "" %>>
+            <input type="checkbox" id="sa" name="seminarios" value="Simulacion con Arena" >
             <label for="sa">Simulación con Arena</label><br>
-            <input type="checkbox" id="re" name="seminarios" value="Robotica Educativa" <%= seminarios != null && seminarios.contains("Robótica Educativa") ? "checked" : "" %>>
+            <input type="checkbox" id="re" name="seminarios" value="Robotica Educativa" >
             <label for="re">Robótica Educativa</label><br>
                     </td>
                 </tr>

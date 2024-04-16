@@ -9,7 +9,7 @@ public class inscripcion {
     private String nombres;
     private String apellidos;
     private String turno;
-    private ArrayList<String> seminarios;
+    private String seminarios;
 
     public inscripcion() {
         this.id=0;
@@ -17,7 +17,7 @@ public class inscripcion {
         this.nombres= "";
         this.apellidos="";
         this.turno="";
-        this.seminarios=new ArrayList<>();
+        this.seminarios="";
         
     }
 
@@ -61,13 +61,15 @@ public class inscripcion {
         this.turno = Turno;
     }
 
-    public ArrayList<String> getSeminarios() {
+    public String getSeminarios() {
         return seminarios;
     }
 
-    public void setSeminarios(ArrayList<String> seminarios) {
+    public void setSeminarios(String seminarios) {
         this.seminarios = seminarios;
     }
+
+   
 
   
     
